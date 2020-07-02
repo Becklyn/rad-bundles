@@ -6,7 +6,10 @@ use Symfony\Component\Config\Definition\ConfigurationInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\BundleInterface;
 
-final class ConfigurableBundleExtension extends BundleExtension
+/**
+ * @final
+ */
+class ConfigurableBundleExtension extends BundleExtension
 {
     private ConfigurationInterface $configuration;
     /** @var callable */
