@@ -1,7 +1,7 @@
 {
     "name": "becklyn/rad-bundles",
     "type": "library",
-    "description": "Provides basic BundleExtensions",
+    "description": "Provides basic helpers for interacting with Symfony bundles.",
     "homepage": "https://github.com/Becklyn/rad-bundles",
     "license": "BSD-3-Clause",
     "authors": [
