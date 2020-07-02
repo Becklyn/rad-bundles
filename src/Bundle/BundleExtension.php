@@ -14,16 +14,10 @@ use Symfony\Component\HttpKernel\Bundle\BundleInterface;
  */
 class BundleExtension extends Extension
 {
-    /** @var BundleInterface */
-    private $bundle;
+    private BundleInterface $bundle;
+    private ?string $alias;
 
 
-    /** @var string|null */
-    private $alias;
-
-
-    /**
-     */
     public function __construct (
         BundleInterface $bundle,
         ?string $alias = null
@@ -32,6 +26,7 @@ class BundleExtension extends Extension
         $this->bundle = $bundle;
         $this->alias = $alias;
     }
+
 
     /**
      * @inheritDoc

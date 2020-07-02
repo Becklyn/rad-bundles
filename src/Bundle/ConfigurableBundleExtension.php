@@ -8,15 +8,11 @@ use Symfony\Component\HttpKernel\Bundle\BundleInterface;
 
 final class ConfigurableBundleExtension extends BundleExtension
 {
-    /** @var ConfigurationInterface */
-    private $configuration;
-
+    private ConfigurationInterface $configuration;
     /** @var callable */
     private $configurator;
 
 
-    /**
-     */
     public function __construct (
         BundleInterface $bundle,
         ConfigurationInterface $configuration,
