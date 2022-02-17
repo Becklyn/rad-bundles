@@ -53,7 +53,7 @@ class BundleExtension extends Extension
     /**
      * @inheritDoc
      */
-    public function getAlias ()
+    public function getAlias () : string
     {
         if (null !== $this->alias)
         {
@@ -62,6 +62,7 @@ class BundleExtension extends Extension
 
         // use default naming convention
         $basename = \preg_replace('/Bundle$/', '', $this->bundle->getName());
+
         return Container::underscore($basename);
     }
 }

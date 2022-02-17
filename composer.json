@@ -1,27 +1,24 @@
 {
     "name": "becklyn/rad-bundles",
-    "type": "library",
     "description": "Provides basic helpers for interacting with Symfony bundles.",
-    "homepage": "https://github.com/Becklyn/rad-bundles",
     "license": "BSD-3-Clause",
+    "type": "library",
     "authors": [
         {
             "name": "Becklyn Studios",
             "homepage": "http://becklyn.com/"
         }
     ],
+    "homepage": "https://github.com/Becklyn/rad-bundles",
     "require": {
-        "php": "^7.4",
-        "symfony/config": "^4.4 || ^5.0",
-        "symfony/dependency-injection": "^4.4 || ^5.0",
-        "symfony/http-kernel": "^4.4 || ^5.0"
+        "php": ">=7.4",
+        "symfony/config": "^5.4.3 || ^6.0.3",
+        "symfony/dependency-injection": "^5.4.3 || ^6.0.3",
+        "symfony/http-kernel": "^5.4.4 || ^6.0.4"
     },
     "require-dev": {
         "roave/security-advisories": "dev-master",
-        "symfony/phpunit-bridge": "^5.1"
-    },
-    "config": {
-        "sort-packages": true
+        "symfony/phpunit-bridge": "^5.4.3 || ^6.0.3"
     },
     "autoload": {
         "psr-4": {
@@ -32,5 +29,8 @@
         "psr-4": {
             "Tests\\Becklyn\\RadBundles\\": "tests/"
         }
+    },
+    "config": {
+        "sort-packages": true
     }
 }
